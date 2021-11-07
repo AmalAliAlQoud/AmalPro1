@@ -1,0 +1,52 @@
+/*   this is the style for first row */
+#first{
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#first img{
+    justify-self:start;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+ /*   justify-content: space-around; */
+}
+.container span{
+    margin: 20px;
+}
+/*   this is the style for second row */
+#second{
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+#second div img{
+    justify-content: left;
+    width: 700px;
+    margin-top: 20px;
+}
+#second #DivBtn{
+display: flex;
+justify-content: center;
+
+}
+#second #DivBtn button{
+    align-self: flex-end;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #00a69c;
+    background-color: #ffe101;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 24px;
+
+
+}
+
+
+
+
+
