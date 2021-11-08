@@ -74,7 +74,6 @@ div title{
     display:flex;
     justify-content:space-evenly;
     background-color: #d7cff3;
-
 }
 .frameBorder{
     border: 2px solid white;
@@ -111,4 +110,52 @@ div title{
     margin-top: 10px;
 text-align: center;
 }
+/*   this is the style for fifth row */
+#fifth{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#fifth img{
+    justify-content: left;
+    width:400px;
+    height: 400px;
+    margin: 60px;
+}
+#outTxt5{
+    justify-content: right;
+    margin: 60px;
+    line-height: 2em;
+    color: gray;
+    font-weight: normal;
+    margin-top: 100px;
+}
+.greenTitle{
+    color: #00a69c;
+    font-family: quicksand;
+    font-weight: bold;
+    font-size: 25px;
+}
+#sixth{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#outTxt6{
+    justify-content: left;
+    margin: 60px;
+    line-height: 2em;
+    color: gray;
+    font-weight: normal;
+    margin-top: 100px;
+}
+#sixth img{
+    justify-content: right;
+    width: 400px;
+    height: 400px;
+    margin: 60px;
+}
+
 
