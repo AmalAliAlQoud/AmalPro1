@@ -197,5 +197,23 @@ text-align: center;
     height: 400px;
     margin: 60px;
 }
-
+#eightth{
+    background-color: #0c1753;
+    display:grid;
+    grid-template-columns: 30% 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#col8Left{
+    color: white;
+    font-size: 28px;
+    justify-content: left;
+    margin: 60px;
+}
+#col8Right{
+    color: white;
+    font-size: 18px;
+    justify-content: right;
+    margin-top: 30px;
+}
 
