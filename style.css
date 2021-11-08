@@ -157,5 +157,45 @@ text-align: center;
     height: 400px;
     margin: 60px;
 }
+#fifth{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#fifth img{
+    justify-content: left;
+    width:400px;
+    height: 400px;
+    margin: 60px;
+}
+#outTxt5{
+    justify-content: right;
+    margin: 60px;
+    line-height: 2em;
+    color: gray;
+    font-weight: normal;
+    margin-top: 100px;
+}
+#seventh{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#outTxt7{
+    justify-content: left;
+    margin: 60px;
+    line-height: 2em;
+    color: gray;
+    font-weight: normal;
+    margin-top: 100px;
+}
+#seventh img{
+    justify-content: right;
+    width: 400px;
+    height: 400px;
+    margin: 60px;
+}
 
 
