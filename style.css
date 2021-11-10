@@ -4,8 +4,8 @@ body{
     
 
 }
-/*   this is the style for first row */
-#first{
+/*   this is the style for Nav toolbar */
+nav{
     background-color: #FFFFFF;
     display: flex;
     flex-direction: row;
@@ -13,56 +13,49 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-#first img{
+.logo-section{
     justify-self:start;
 }
-.Navcontainer{
+.link-section{
     display: flex;
     flex-direction: row;
 }
-.Navcontainer nav{
+.link-section a{
     margin: 20px;
 }
 /*   this is the style for second row */
-#second{
+header{
     background: linear-gradient(0deg, #af9cf3 60%, #6c6191);
-   /* display: grid;
-    grid-template-columns: 50% 50%;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-  
+    padding:60px;
+   justify-content: space-between;
 }
-#second #col2 img{
-    max-width: 700px;
-    margin: 60px 10px 30px 10px;
+#header-img{
+    max-width: 400px; /* 600 and small 400*/
 }
-#col1{
+.image-section{
+    flex-grow: 1;
+}
+.text-section{
+    flex-grow: 1;
     color: #FFFFFF;
     font-family: Quicksans;
-    flex-basis: 50%;;
-
 }
-#col2{
-    flex-basis: 50%;;
-}
-#second #col1 #txt1{
+#header-p1{
     font-size: 3rem; /*  60px */
-    margin: 60px 60px 30px 60px;
 }
-#second #col1 #txt2{
+#header-p2{
     font-size: 1rem; /*  20px */
-    margin: 20px 60px 30px 60px;
     padding-bottom: 30px;
     }
-#second #col1 #DivBtn{
+.more-container{
 display: flex;
 justify-content: center;
-
 }
-#second #col1 #DivBtn button{
+#more-btn{
     padding-left: 40px;
     padding-right: 40px;
     color: #00a69c;
@@ -72,10 +65,9 @@ justify-content: center;
     font-size: 1.5rem; /*  30px    */
     margin-bottom: 40px;
     box-shadow: 0px 2px 5px gray;
-
 }
 /*   this is the style for third row */
-div title{
+#services-title{
     display:flex;
     justify-content: center;
     font-size: 2rem; /*  40px   */
@@ -87,30 +79,27 @@ div title{
 }
 
 /*   this is the style for fourth row */
-#fourth{
-    display:flex;
+.class-cards{
+    display:flex;  /* inline-block not correct*/
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
     background-color: #d7cff3;
 }
-.frameBorder{
+.card-frame-container{
     border: 2px solid white;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 40px 20px 20px;
     background-color:#FFFFFF;
     margin-top: 40px;
     margin-bottom: 40px;
     box-shadow: 0px 5px 5px gray;
     height:fit-content;
 }
-.imgTxtFrame{
+.card-frame-content{
     align-items: center;
     position: relative;
 }
-.yellowcircle{
+.yellow-circle{
     position: relative;
     background-color: #fee552;
     height: 150px;
@@ -118,7 +107,7 @@ div title{
     z-index: 1;
     border-radius:50%;
 }
-.imgTxtFrame img{
+.card-frame-content img{
     position: absolute;
     height: 100px;
     width: 100px;
@@ -126,38 +115,48 @@ div title{
     top: 30px;
     left: 30px;
     }
-.bottomTxt{
+.bottom-text{
     width: 150px;
     margin-top: 10px;
     text-align: center;
 }
 /*   this is the style for fifth row */
-#fifth{
+.software-class{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 20px;
-    margin-right: 20px;
+    justify-content: space-between;
+    padding:60px 20px 60px 20px;
 }
-#fifth img{
+.sw-img-section{
+    flex-basis: 40%;
     justify-content: left;
+}
+.sw-img{
     width:400px;
     height: 400px;
-    margin: 60px;
 }
-#outTxt5{
-    justify-content: right;
-    margin: 60px;
+.sw-txt-section{
+    flex-basis: 40%;
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.sw-text{
     line-height: 2em;
     color: gray;
     font-weight: normal;
-    margin-top: 100px;
 }
 .greenTitle{
     color: #00a69c;
     font-family: quicksand;
     font-weight: bold;
     font-size: 1.25rem; /*  25px  */
+}
+.sw-img-section-right{
+    flex-basis: 40%;
+    justify-content: right;
 }
 #sixth{
     display:grid;
