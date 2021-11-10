@@ -125,7 +125,7 @@ justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding:60px 20px 60px 20px;
 }
 .sw-img-section{
@@ -137,11 +137,7 @@ justify-content: center;
     height: 400px;
 }
 .sw-txt-section{
-    flex-basis: 40%;
-   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    flex-basis: 40%; /* responsive to 100%  */ 
 }
 .sw-text{
     line-height: 2em;
@@ -154,70 +150,8 @@ justify-content: center;
     font-weight: bold;
     font-size: 1.25rem; /*  25px  */
 }
-.sw-img-section-right{
-    flex-basis: 40%;
-    justify-content: right;
-}
-#sixth{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#outTxt6{
-    justify-content: left;
-    margin: 60px;
-    line-height: 2em;
-    color: gray;
-    font-weight: normal;
-    margin-top: 100px;
-}
-#sixth img{
-    justify-content: right;
-    width: 400px;
-    height: 400px;
-    margin: 60px;
-}
-#fifth{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#fifth img{
-    justify-content: left;
-    width:400px;
-    height: 400px;
-    margin: 60px;
-}
-#outTxt5{
-    justify-content: right;
-    margin: 60px;
-    line-height: 2em;
-    color: gray;
-    font-weight: normal;
-    margin-top: 100px;
-}
-#seventh{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#outTxt7{
-    justify-content: left;
-    margin: 60px;
-    line-height: 2em;
-    color: gray;
-    font-weight: normal;
-    margin-top: 100px;
-}
-#seventh img{
-    justify-content: right;
-    width: 400px;
-    height: 400px;
-    margin: 60px;
-}
+
+
 #eightth{
     background-color: #0c1753;
     display:grid;
