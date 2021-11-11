@@ -188,7 +188,46 @@ justify-content: center;
     width: 60%;
     background-color: #fee552;
 }
-
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footerr-logo{
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+}
+#footer-img{
+    align-self: center;
+}
+#footer-img img{
+    height: 2em;
+    width: 2em;
+}
+#footer-develop{
+    align-self: center;
+    font-weight: bold;
+    font-stretch:ultra-condensed;
+    letter-spacing: .2em;
+}
+#footer-pages-title{
+    text-align: left;
+    color:#00a69c;
+    line-height: 2em;
+    font-weight: bold;
+}
+#footer-links{
+align-self: center;
+    text-align: left;
+    line-height: 1.5em;
+  }
+#social-img{
+    width: .2em;
+    height: .2em;
+}
 @media only screen and(max-width: 600px) {
     #first{
         background: red;
