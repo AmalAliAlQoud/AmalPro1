@@ -192,16 +192,34 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    padding: 1em;
 }
 .footerr-logo{
     display: flex;
     flex-direction:column;
     align-content: center;
+    flex-grow: 1;
+}
+.footer-pages{
+    flex-grow: 1;
+
+
+}
+.footerr-terms{
+    flex-grow: 1;
+
+
+}
+.footerr-find-us{
+    flex-grow: 1;
+
 }
 #footer-img{
     align-self: center;
+    display: inline-block;
+
 }
 #footer-img img{
     height: 2em;
