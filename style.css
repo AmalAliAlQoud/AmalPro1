@@ -1,8 +1,7 @@
+/*   this is the style for body */
 body{
     margin: 0px;
     font-size: 20px;
-    
-
 }
 /*   this is the style for Nav toolbar */
 nav{
@@ -21,9 +20,10 @@ nav{
     flex-direction: row;
 }
 .link-section a{
-    margin: 20px;
+    margin: 1rem;
 }
-/*   this is the style for second row */
+
+/*   this is the style for header */
 header{
     background: linear-gradient(0deg, #af9cf3 60%, #6c6191);
     display: flex;
@@ -31,9 +31,9 @@ header{
     flex-wrap: wrap;
     align-items: center;
     padding:60px;
-   justify-content: space-between;
+   justify-content: space-evenly;
 }
-#header-img{
+.header-img{
     max-width: 400px; /* 600 and small 400*/
 }
 .image-section{
@@ -55,7 +55,7 @@ header{
 display: flex;
 justify-content: center;
 }
-#more-btn{
+.more-btn{
     padding-left: 40px;
     padding-right: 40px;
     color: #00a69c;
@@ -66,7 +66,7 @@ justify-content: center;
     margin-bottom: 40px;
     box-shadow: 0px 2px 5px gray;
 }
-/*   this is the style for third row */
+/*   this is the style for services */
 #services-title{
     display:flex;
     justify-content: center;
@@ -78,7 +78,7 @@ justify-content: center;
     margin-bottom: 30px;
 }
 
-/*   this is the style for fourth row */
+/*   this is the style for class-card */
 .class-cards{
     display:flex;  /* inline-block not correct*/
     flex-direction: row;
@@ -120,7 +120,7 @@ justify-content: center;
     margin-top: 10px;
     text-align: center;
 }
-/*   this is the style for fifth row */
+/*   this is the style for S/w */
 .software-class{
     display: flex;
     flex-direction: row;
@@ -150,14 +150,12 @@ justify-content: center;
     font-weight: bold;
     font-size: 1.25rem; /*  25px  */
 }
-
-
+/*   this is the style for form */
 .class-form{
     background-color: #0c1753;
     display:grid;
     grid-template-columns: 30% 70%;
     padding: 20px;
-   
 }
 #left-form-title{
     color: white;
@@ -189,7 +187,6 @@ justify-content: center;
 .class-other-fiels{
     display: flex;
     flex-direction: row;
-
 }
 #name,#city{
 flex-grow:1;
@@ -201,6 +198,7 @@ flex-grow:1;
     flex-grow:1;
     background-color: #fee552;
 }
+/*   this is the style for footer */
 footer{
     display: flex;
     flex-direction: row;
@@ -215,27 +213,19 @@ footer{
     align-content: center;
     flex-grow: 1;
     justify-content: space-evenly;
-
 }
 .footer-pages{
     flex-grow: 1;
-
-
 }
 .footerr-terms{
     flex-grow: 1;
-
-
-
 }
 .footerr-find-us{
     flex-grow: 1;
-
 }
 #footer-img{
     align-self: center;
     display: inline-block;
-
 }
 #footer-img img{
     height: 2em;
@@ -262,9 +252,135 @@ align-self: center;
     width: .2em;
     height: .2em;
 }
-@media only screen and(max-width: 600px) {
-    #first{
-        background: red;
+/*   this is the style for copyrights section */
+.class-copyrigt{
+    background: linear-gradient(0deg, #af9cf3 60%, #6c6191);
+display:flex;
+justify-content:center;
     }
-    
+#Copyright-text{
+    justify-content:center;
+}
+#Copyright-text > #develop-text{
+    color: white;
+    font-family: Quicksans;
+}
+
+/*   this is the style for responsive */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    header {
+        align-items: flex-start;
+        padding: 20px;
+        justify-content: flex-start;
+    }
+    .header-img {
+        max-width: 300px;
+    }
+    .more-btn {
+        margin-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1rem; /*  30px    */
+    }
+    #header-p1 {
+        font-size: 2rem;
+    }
+    #header-p2{
+        padding-bottom: 0px;
+        }
+    #services-title {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .class-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-frame-container {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+        padding:0px;
+    }
+    .yellow-circle {
+        height: 100px;
+        width: 100px;
+    }
+    .card-frame-content img{
+        height: 75px;
+        width: 75px;
+        top:15px;
+        left: 15px;
+    }
+    .bottom-text {
+        width: 100px;
+        margin-top: 0px;
+  }
+  .sw-img {
+    width: 250px;
+    height: 250px;
+}
+.software-class {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 20px 20px 10px 10px;
+  }
+.sw-text {
+    line-height: 1em;
+    color: gray;
+    font-weight: normal;
+    margin: 15px;
+}
+.greenTitle{
+font-size:1em;
+}
+.software-class-reverse{
+    flex-direction: column;
+}
+#left-form-title {
+    margin: 5%;
+    font-size: 1rem;
+}
+.form-section{
+    padding:50px;
+}
+.form-fiels{
+    column-gap: .2em;
+}
+#right-form-title {
+    font-size: .7rem;
+}
+.class-name-city{
+    display: flex;
+    flex-direction: column;
+    column-gap: .2em;
+}
+footer{
+    flex-wrap: nowrap;
+    padding: .5em;
+}
+#footer-pages-title{
+    line-height:1em;
+}
+#footer-develop{
+       letter-spacing: .1em;
+       letter-spacing:normal;
+}
+#footer-links,#footer-links-title{
+    line-height: 1em;
+    font-size: .5rem;
+}
+#footer-img img{
+    height: 1em;
+    width: 1em;
+}
+#Copyright-text{
+    font-size:.5rem;
+}
 }
